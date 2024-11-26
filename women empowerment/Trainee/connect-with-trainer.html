@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connect with Trainer</title>
+    <link rel="stylesheet" href="trainee.css">
+</head>
+<body>
+    <header class="trainer-header">
+        <h1>Connect with Trainer</h1>
+        <div class="trainer-info">
+            <img src="../images/trainer.png" alt="Trainer Photo" class="trainer-photo">
+            <div>
+                <h2>Jane Doe</h2>
+                <p>Certified Tourism Trainer with 10+ years of experience in sustainable tourism and hospitality.</p>
+            </div>
+        </div>
+    </header>
+    <section class="course-details">
+        <h3>Course: Introduction to the Tourism Industry</h3>
+        <p>Learn the fundamentals of tourism, including its economic impact and sustainable practices. Gain insights into the global tourism industry and practical skills for a successful career.</p>
+    </section>
+
+    <div class="chat-container">
+        <div class="chat-box" id="chatBox">
+            <p class="message trainer">
+                <span class="message-time">10:00 AM</span> Hello! How can I assist you with the course?
+            </p>
+        </div>
+
+        <div class="message-input">
+            <input type="text" id="messageInput" placeholder="Type your message...">
+            <button onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <script src="chat.js"></script>
+</body>
+</html>

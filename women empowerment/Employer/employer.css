@@ -1,0 +1,109 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+.dashboard-header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.dashboard-header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+.job-form-section, .manage-jobs-section {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.job-form-section h2, .manage-jobs-section h2 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.job-form label {
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.job-form input, .job-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.submit-job-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.submit-job-button:hover {
+    background-color: #45a049;
+}
+
+.jobs-container {
+    margin-top: 20px;
+}
+
+.job-posting {
+    background-color: #f4f4f4;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    border-left: 4px solid #4CAF50;
+}
+
+.job-posting h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.job-posting p {
+    margin: 5px 0;
+}
+
+.edit-button, .delete-button {
+    padding: 5px 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.edit-button {
+    background-color: #ffa500;
+    color: white;
+    margin-right: 5px;
+}
+
+.edit-button:hover {
+    background-color: #e59400;
+}
+
+.delete-button {
+    background-color: #ff4d4d;
+    color: white;
+}
+
+.delete-button:hover {
+    background-color: #e03e3e;
+}

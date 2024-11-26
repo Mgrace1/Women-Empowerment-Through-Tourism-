@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to WETS - Women Empowerment through Tourism</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <section class="welcome-section">
+        <div class="welcome-text">
+            <h1>Welcome to WETS</h1>
+        </div>
+        <div class="action-buttons">
+            <button onclick="window.location.href='register.html'"> Register </button> 
+            <button onclick="window.location.href='login.html'">Login</button>
+        </div>
+        <div class="menu-icon" onclick="toggleSidebar()">☰</div>
+    </section>
+    <div class="sidebar" style="display: none;">
+        <div class="sidebar-content">
+            <span class="close-button" onclick="toggleSidebar()">×</span>
+            <h2>Explore</h2>
+            <ul>
+                <li><a href="about-us.html">About Us</a></li>
+                <li><a href="job oppoturnity.html">Job Opportunities</a></li>
+                <li><a href="community.html">Community</a></li>
+                <li><a href="contact-us.html">Contact Us</a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <footer class="main-footer">
+        <p>Contact Us: <br> Email: info@wetsprogram.com | Phone: +250 123 456 789</p>
+        <p>Connect with us on social media:</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com/" target="_blank">Instagram</a> |
+            <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a> |
+            <a href="https://twitter.com/" target="_blank">Twitter</a>
+        </div>
+        <p>Address: Kigali, Rwanda</p>
+        <p>&copy; 2024 WETS Program. Empowering Women through Tourism.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WETS Training Program</title>
+    <link rel="stylesheet" href="trainee.css">
+</head>
+<body>
+    <header>
+        <h1>Women Empowerment through Tourism (WETS) Training Program</h1>
+        <p>Empowering women with skills and opportunities in Rwanda’s tourism industry</p>
+    </header>
+
+    <div class="dashboard-grid">
+        <!-- Courses Section -->
+        <section class="course-container">
+            <div class="course">
+                <img src="../images/Intro.png" alt="Introduction to Tourism">
+                <div class="course-header">
+                    <h2>Introduction to the Tourism Industry</h2>
+                    <span class="status-badge" id="status-intro" style="display: none;">Enrolled</span>
+                </div>
+                <p>Learn the fundamentals of tourism, including its economic impact and sustainable practices.</p>
+                <div class="course-buttons">
+                    <button class="enroll-button" onclick="toggleEnrollment(this, 'Introduction to the Tourism Industry')">Enroll</button>
+                    <button class="connect-button outlined" onclick="connectWithTrainer('Introduction to the Tourism Industry')">Connect with Trainer</button>
+                </div>
+            </div>
+
+            <div class="course">
+                <img src="../images/customer.png" alt="Customer Service and Communication">
+                <div class="course-header">
+                    <h2>Customer Service and Communication Skills</h2>
+                    <span class="status-badge" id="status-customer" style="display: none;">Enrolled</span>
+                </div>
+                <p>Develop essential skills for delivering excellent customer service and handling guest interactions.</p>
+                <div class="course-buttons">
+                    <button class="enroll-button" onclick="toggleEnrollment(this, 'Customer Service and Communication Skills')">Enroll</button>
+                    <button class="connect-button outlined" onclick="connectWithTrainer('Customer Service and Communication Skills')">Connect with Trainer</button>
+                </div>
+            </div>
+
+            <div class="course">
+                <img src="../images/Digital.png" alt="Digital Marketing and Social Media">
+                <div class="course-header">
+                    <h2>Digital Marketing and Social Media for Tourism</h2>
+                    <span class="status-badge" id="status-digital" style="display: none;">Enrolled</span>
+                </div>
+                <p>Learn digital marketing basics to promote tourism services and engage audiences online.</p>
+                <div class="course-buttons">
+                    <button class="enroll-button" onclick="toggleEnrollment(this, 'Digital Marketing and Social Media for Tourism')">Enroll</button>
+                    <button class="connect-button outlined" onclick="connectWithTrainer('Digital Marketing and Social Media for Tourism')">Connect with Trainer</button>
+                </div>
+            </div>
+
+            <div class="course">
+                <img src="../images/Hospitality.png" alt="Hospitality Management">
+                <div class="course-header">
+                    <h2>Hospitality and Accommodation Management</h2>
+                    <span class="status-badge" id="status-hospitality" style="display: none;">Enrolled</span>
+                </div>
+                <p>Gain skills in hospitality, from check-in procedures to guest satisfaction and cleanliness standards.</p>
+                <div class="course-buttons">
+                    <button class="enroll-button" onclick="toggleEnrollment(this, 'Hospitality and Accommodation Management')">Enroll</button>
+                    <button class="connect-button outlined" onclick="connectWithTrainer('Hospitality and Accommodation Management')">Connect with Trainer</button>
+                </div>
+            </div>
+
+            <div class="course">
+                <img src="../images/Tourguiding.png" alt="Tour Guiding and Heritage">
+                <div class="course-header">
+                    <h2>Tour Guiding and Heritage Interpretation</h2>
+                    <span class="status-badge" id="status-tour" style="display: none;">Enrolled</span>
+                </div>
+                <p>Develop your guiding skills and learn to engage tourists through storytelling and heritage interpretation.</p>
+                <div class="course-buttons">
+                    <button class="enroll-button" onclick="toggleEnrollment(this, 'Tour Guiding and Heritage Interpretation')">Enroll</button>
+                    <button class="connect-button outlined" onclick="connectWithTrainer('Tour Guiding and Heritage Interpretation')">Connect with Trainer</button>
+                </div>
+            </div>
+
+            <div class="course">
+                <img src="../images/Entrepreneurship.png" alt="Entrepreneurship in Tourism">
+                <div class="course-header">
+                    <h2>Entrepreneurship in Tourism</h2>
+                    <span class="status-badge" id="status-entrepreneurship" style="display: none;">Enrolled</span>
+                </div>
+                <p>Learn the basics of entrepreneurship and discover opportunities for starting a tourism business.</p>
+                <div class="course-buttons">
+                    <button class="enroll-button" onclick="toggleEnrollment(this, 'Entrepreneurship in Tourism')">Enroll</button>
+                    <button class="connect-button outlined" onclick="connectWithTrainer('Entrepreneurship in Tourism')">Connect with Trainer</button>
+                </div>
+            </div>
+
+            <div class="course">
+                <img src="../images/Sustainable.png" alt="Sustainable Tourism Practices">
+                <div class="course-header">
+                    <h2>Sustainable Tourism Practices</h2>
+                    <span class="status-badge" id="status-sustainable" style="display: none;">Enrolled</span>
+                </div>
+                <p>Learn about eco-friendly practices that promote responsible tourism and help preserve natural resources.</p>
+                <div class="course-buttons">
+                    <button class="enroll-button" onclick="toggleEnrollment(this, 'Sustainable Tourism Practices')">Enroll</button>
+                    <button class="connect-button outlined" onclick="connectWithTrainer('Sustainable Tourism Practices')">Connect with Trainer</button>
+                </div>
+            </div>
+
+            <div class="course">
+                <img src="../images/Safety.png" alt="Safety and Crisis Management">
+                <div class="course-header">
+                    <h2>Safety, First Aid, and Crisis Management</h2>
+                    <span class="status-badge" id="status-safety" style="display: none;">Enrolled</span>
+                </div>
+                <p>Get essential training in first aid, safety protocols, and handling emergencies in tourism.</p>
+                <div class="course-buttons">
+                    <button class="enroll-button" onclick="toggleEnrollment(this, 'Safety, First Aid, and Crisis Management')">Enroll</button>
+                    <button class="connect-button outlined" onclick="connectWithTrainer('Safety, First Aid, and Crisis Management')">Connect with Trainer</button>
+                </div>
+            </div>
+        </section>
+
+        <div class="progress-container">
+            <h2>Course Progress</h2>
+            <ul id="progress-list">
+                <p class="no-progress">No courses enrolled yet.</p>
+            </ul>
+            <button class="job-listings-button" onclick="checkJobListings()" disabled>Check Job Listings</button>
+        </div>
+    </div>
+        
+    
+        <script src="trainee.js"></script>>
+</body>
+</html>

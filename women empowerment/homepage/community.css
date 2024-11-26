@@ -1,0 +1,167 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f9f9f9;
+}
+header, section {
+    padding: 20px;
+    text-align: center;
+}
+
+.community-header {
+    background-color: #0a6e0f;
+    color: white;
+    padding: 5px;
+}
+
+.community-header h1 {
+    font-size: 3em;
+    margin-bottom: 10px;
+}
+
+.community-header p {
+    font-size: 1.2em;
+}
+
+.about-community {
+    background-color: #ffffff;
+    margin: 20px auto;
+    max-width: 1200px;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+
+.about-community img {
+    width: 100%;
+    max-width: 100%;
+    height: auto; 
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.slide {
+    display: none;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.fade {
+    animation: fadeEffect 1.5s ease-in-out;
+}
+
+@keyframes fadeEffect {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.testimonials {
+    background-color: #dff9fb;
+    padding: 20px;
+}
+
+.testimonials h2 {
+    margin-bottom: 20px;
+}
+
+.testimonial {
+    background-color: #ffffff;
+    padding: 15px;
+    margin: 10px auto;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-align: left;
+}
+
+.testimonial-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.testimonial p {
+    font-style: italic;
+    flex-grow: 1;
+}
+
+.testimonial strong {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.gallery {
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.gallery h2 {
+    margin-bottom: 20px;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.join-community {
+    background-color: #ffffff;
+    padding: 20px;
+}
+
+.join-community h2 {
+    margin-bottom: 10px;
+}
+
+.join-community button {
+    background-color: #34db58;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+.join-community button:hover {
+    background-color: #29b93c;
+}
+
+.community-footer {
+    background-color: #068b23;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    margin-top: 20px;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employer Dashboard</title>
+    <link rel="stylesheet" href="employer.css">
+</head>
+<body>
+    <header class="dashboard-header">
+        <h1>Employer Dashboard</h1>
+        <p>Manage job postings effectively and review applicants</p>
+    </header>
+
+    <section class="job-form-section">
+        <h2>Add a New Job Posting</h2>
+        <form class="job-form" onsubmit="addJob(event)">
+            <label>Job Title:</label>
+            <input type="text" class="job-title" placeholder="Enter job title" required>
+
+            <label>Job Description:</label>
+            <textarea class="job-description" placeholder="Enter job description" required></textarea>
+
+            <label>Skills Required:</label>
+            <input type="text" class="job-skills" placeholder="Skills (e.g., teamwork, leadership)" required>
+
+            <label>Application Deadline:</label>
+            <input type="date" class="job-deadline" required>
+
+            <button type="submit" class="submit-job-button">Add Job</button>
+        </form>
+    </section>
+
+    <section class="manage-jobs-section">
+        <h2>Manage Job Postings</h2>
+        <div class="jobs-container">
+            
+        </div>
+    </section>
+
+    <script src="employer-dashboard.js"></script>
+</body>
+</html>

@@ -1,0 +1,224 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    margin: 10px 0;
+}
+
+.hero-section {
+    background-image: url('../images/about.png'); 
+    background-position: center;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.hero-content h1, .hero-content p {
+    animation: slideUp 1s ease-out;
+    margin: 5px 0;
+    font-size: 2em; 
+    font-weight: bold; 
+    color: #faf4f4;
+
+}
+
+
+@keyframes slideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.about-details {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+    max-width: 1000px;
+    margin: 20px auto;
+    border-radius: 8px;
+}
+
+.about-details h2 {
+    margin-bottom: 20px;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.slide {
+    display: none;
+    text-align: center;
+    animation: fadeEffect 1.5s ease-in-out;
+}
+
+.slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+@keyframes fadeEffect {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.mission-vision {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    background-color: #d3cdcd;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.mission-vision .card {
+    background-color: #d3a4b3;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 400px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.impact {
+    background-color: #aedde0;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.impact h2 {
+    margin-bottom: 20px;
+}
+
+.impact-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.impact-item {
+    background-color: #cfc2c2;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 200px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.impact-item h3 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+
+.team {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.team h2 {
+    margin-bottom: 20px;
+}
+
+.team-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.team-member {
+    text-align: center;
+    max-width: 200px;
+}
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.team-member h3 {
+    margin: 5px 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+
+.join-us {
+    background-color: #106d18;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+
+.join-us h2, .join-us p {
+    margin-bottom: 20px;
+}
+
+.join-us button {
+    background-color: #ffffff;
+    color: #3498db;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.join-us button:hover {
+    background-color: #f3f3f3;
+}
+
+.footer {
+    background-color: #2baa47;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    margin-top: 20px;
+}
+
+
+@media (max-width: 768px) {
+    .mission-vision, .impact-grid, .team-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .mission-vision .card, .impact-item, .team-member {
+        max-width: 100%;
+    }
+}

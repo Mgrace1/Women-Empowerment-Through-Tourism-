@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="admin.css" />
+  </head>
+  <body>
+    <header class="dashboard-header">
+      <h1>Admin Dashboard</h1>
+      <p>Manage users, view reports, and oversee system content</p>
+    </header>
+
+    <section class="dashboard-content">
+      <section class="overview-section dashboard-card">
+        <h2>Overview</h2>
+        <div class="overview-card">
+          <p>
+            <strong>Total Users:</strong> <span class="total-users">0</span>
+          </p>
+          <p>
+            <strong>Active Courses:</strong>
+            <span class="active-courses">0</span>
+          </p>
+          <p>
+            <strong>Job Postings:</strong> <span class="job-postings">0</span>
+          </p>
+        </div>
+      </section>
+
+      <section class="reports-section dashboard-card">
+        <h2>Reports and Analytics</h2>
+        <button onclick="generateUserReport()">
+          Generate User Activity Report
+        </button>
+        <button onclick="generateCourseReport()">
+          Generate Course Enrollment Report
+        </button>
+        <button onclick="generateJobReport()">
+          Generate Job Placement Report
+        </button>
+        <div class="report-output"></div>
+      </section>
+
+      <section class="system-management dashboard-card">
+        <h2>System Management</h2>
+        <button onclick="manageUsers()">Manage Users</button>
+        <button onclick="monitorContent()">Monitor Active Content</button>
+        <button onclick="resolveIssues()">Resolve Issues</button>
+        <div class="management-output"></div>
+      </section>
+    </section>
+
+    <script src="admin-dashboard.js"></script>
+  </body>
+</html>

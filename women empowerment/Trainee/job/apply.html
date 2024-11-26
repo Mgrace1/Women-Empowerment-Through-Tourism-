@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply for Job</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Apply for Job</h1>
+    </header>
+
+    <section class="application-container">
+        <form class="application-form" id="jobApplicationForm" onsubmit="submitApplication(event)">
+            <h2>Submit Your Application</h2>
+
+            <!-- Cover Letter -->
+            <label for="coverLetter">Cover Letter:</label>
+            <textarea 
+                id="coverLetter" 
+                name="coverLetter" 
+                placeholder="Write your cover letter..." 
+                rows="6" 
+                required>
+            </textarea>
+
+            <!-- Upload CV -->
+            <label for="resume">Upload Your CV:</label>
+            <input 
+                type="file" 
+                id="resume" 
+                name="resume" 
+                accept=".pdf,.doc,.docx" 
+                required 
+            />
+
+            <!-- Submit and Back Buttons -->
+            <div class="form-buttons">
+                <button type="submit" class="submit-button">Submit Application</button>
+                <button type="button" class="back-button" onclick="goBack()">Back</button>
+            </div>
+        </form>
+
+        <div id="confirmationMessage" style="display: none; margin-top: 15px;"></div>
+    </section>
+
+    <script src="apply.js"></script>
+</body>
+</html>

@@ -1,0 +1,136 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+}
+
+header, section {
+    padding: 20px;
+    text-align: center;
+}
+
+
+.jobs-header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 10px;
+}
+
+.jobs-header h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.jobs-header p {
+    font-size: 1.2em;
+}
+
+
+.job-search {
+    padding: 20px;
+    text-align: center;
+    background-color: #ecf0f1;
+    margin-bottom: 20px;
+}
+
+.job-search-input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+
+.job-listings {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.job {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: left;
+}
+
+.job h3 {
+    margin-top: 0;
+}
+
+.job button {
+    background-color: #119e47;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.job button:hover {
+    background-color: #29b948;
+}
+
+
+.job-details {
+    background-color: #ffffff;
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.job-details button {
+    background-color: #3ca144;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.job-details button:hover {
+    background-color: #109426;
+}
+
+.footer {
+    background-color: #2b791b;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+
+.footer p {
+    margin: 10px 0;
+    font-size: 1em;
+}
+
+.social-links {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-icon {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}

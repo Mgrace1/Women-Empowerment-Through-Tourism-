@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trainer Dashboard - WETS</title>
+    <link rel="stylesheet" href="trainer.css">
+</head>
+<body>
+    <header class="dashboard-header">
+        <div class="profile-header">
+            <img src="../images/trainer.png" alt="Trainer Photo" class="header-photo">
+            <div class="profile-info">
+                <h1>Trainer Name</h1>
+                <p>Trainer in Sustainable Tourism & Hospitality</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="dashboard-grid">
+        <!-- Announcements -->
+        <section class="announcements-section">
+            <h2>Announcements</h2>
+            <form class="announcement-form" onsubmit="postAnnouncement(event)">
+                <textarea id="announcementContent" placeholder="Write your announcement..." required></textarea>
+                <button type="submit" class="post-button">Post Announcement</button>
+            </form>
+            <h3>Recent Announcements</h3>
+            <div class="announcements-container"></div>
+        </section>
+
+        <!-- Messages from Trainees -->
+        <section class="messaging-section">
+            <h2>Messages from Trainees</h2>
+            <div class="trainee-list"></div>
+        </section>
+
+        <!-- Course Management -->
+        <section class="course-management">
+            <h2>Courses</h2>
+            <form class="add-course-form" onsubmit="addCourse(event)">
+                <input type="text" id="courseTitle" placeholder="Course Title" required>
+                <textarea id="courseDescription" placeholder="Course Description" required></textarea>
+                <input type="text" id="courseSchedule" placeholder="Schedule (e.g., Mondays 10-12)" required>
+                <input type="text" id="courseRequirements" placeholder="Enrollment Requirements" required>
+                <button type="submit" class="add-button">Add Course</button>
+            </form>
+            <div class="course-list"></div>
+        </section>
+    </main>
+
+    <!-- Chat Box -->
+    <div class="chat-box" style="display: none;">
+        <h3>Chat</h3>
+        <div class="chat-content"></div>
+        <textarea class="reply-input" placeholder="Type your reply..."></textarea>
+        <button class="reply-button" onclick="sendMessage()">Send</button>
+    </div>
+
+    <script src="trainer-dashboard.js"></script>
+</body>
+</html>

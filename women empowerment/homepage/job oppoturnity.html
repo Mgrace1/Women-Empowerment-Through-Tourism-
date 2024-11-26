@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Opportunities - WETS</title>
+    <link rel="stylesheet" href="jobs.css">
+</head>
+<body>
+    
+    <header class="jobs-header">
+        <h1>Job Opportunities</h1>
+        <p>Find exciting career opportunities in the tourism sector tailored for you.</p>
+    </header>
+
+    <section class="job-search">
+        <h2>Search Jobs</h2>
+        <input type="text" class="job-search-input" placeholder="Search by job title or location..." oninput="filterJobs()">
+    </section>
+
+    <section class="job-listings">
+        <div class="job" data-title="Tour Guide" data-location="Kigali">
+            <h3>Tour Guide</h3>
+            <p><strong>Location:</strong> Kigali, Rwanda</p>
+            <p>Lead groups of tourists and provide insights about Rwanda's culture and attractions.</p>
+            <button onclick="viewJobDetails('Tour Guide')">View Details</button>
+        </div>
+
+        <div class="job" data-title="Hotel Receptionist" data-location="Musanze">
+            <h3>Hotel Receptionist</h3>
+            <p><strong>Location:</strong> Musanze, Rwanda</p>
+            <p>Assist guests with check-ins, reservations, and inquiries at a 5-star hotel.</p>
+            <button onclick="viewJobDetails('Hotel Receptionist')">View Details</button>
+        </div>
+
+        <div class="job" data-title="Marketing Specialist" data-location="Kigali">
+            <h3>Marketing Specialist</h3>
+            <p><strong>Location:</strong> Kigali, Rwanda</p>
+            <p>Develop marketing strategies and manage social media for a tourism company.</p>
+            <button onclick="viewJobDetails('Marketing Specialist')">View Details</button>
+        </div>
+    </section>
+
+    <section class="job-details" id="jobDetails" style="display: none;">
+        <h2>Job Details</h2>
+        <p id="jobDetailsContent"></p>
+        <button onclick="applyForJob()">Apply Now</button>
+        <button onclick="goBackToListings()">Back to Listings</button>
+    </section>
+    <footer class="footer">
+        <p>&copy; 2024 WETS Program. Empowering Women through Tourism.</p>
+        <div class="social-links">
+            <a href="https://www.instagram.com" target="_blank">
+                <img src="icons/instagram.png" alt="Instagram" class="social-icon">
+            </a>
+            <a href="https://www.linkedin.com" target="_blank">
+                <img src="icons/linkedin.png" alt="LinkedIn" class="social-icon">
+            </a>
+            <a href="https://www.facebook.com" target="_blank">
+                <img src="icons/facebook.png" alt="Facebook" class="social-icon">
+            </a>
+            <a href="https://www.twitter.com" target="_blank">
+                <img src="icons/twitter.png" alt="Twitter" class="social-icon">
+            </a>
+        </div>
+    </footer>
+    
+
+    <script src="jobs.js"></script>
+</body>
+</html>
